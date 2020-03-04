@@ -1,0 +1,10 @@
+User
+    id
+    data
+
+FaceData
+    id
+    user_id
+    degree
+    data
+    create_time

@@ -1,0 +1,7 @@
+.idea
+venv
+face
+config.py
+db.sqlite
+log.log
+*.pyc

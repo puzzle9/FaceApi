@@ -2,6 +2,11 @@
 
 # Install
 
+## aarch64
+
+<https://pypi.org/project/numpy-aarch64/#files>
+<https://pillow.readthedocs.io/en/latest/installation.html#building-on-linux>
+
 ## config
 
 ```

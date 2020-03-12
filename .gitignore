@@ -2,6 +2,7 @@
 venv
 face
 config.py
+uwsgi.ini
 db.sqlite
 log.log
 *.pyc

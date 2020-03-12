@@ -6,6 +6,7 @@
 
 ```
 cp config.example.py config.py
+cp uwsgi.example.ini uwsgi.ini
 ```
 
 ## pip

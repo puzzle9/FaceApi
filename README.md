@@ -2,10 +2,19 @@
 
 # Install
 
+- maybe sometimes install is boooooooooooom / restart
+
 ## aarch64
 
 <https://pypi.org/project/numpy-aarch64/#files>
 <https://pillow.readthedocs.io/en/latest/installation.html#building-on-linux>
+
+## start
+
+```
+virtualenv --no-site-packages face_api
+source bin/activate
+```
 
 ## config
 

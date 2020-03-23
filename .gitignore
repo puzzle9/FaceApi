@@ -1,6 +1,6 @@
 .idea
 venv
-face
+/face
 config.py
 uwsgi.ini
 db.sqlite

@@ -8,7 +8,7 @@ class UserModel(db.Model, Mixin):
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     data = db.Column(db.LargeBinary, nullable=True)
-    faces = db.relationship('FaceModel', lazy='dynamic' )
+    # faces = db.relationship('FaceModel', lazy='dynamic' )
 
 
 def FaceDelete(user_id):

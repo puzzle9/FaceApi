@@ -23,8 +23,14 @@ def UserGet(user_id):
     return  user
 
 
-def UserCreate():
+def UserCreate(user_id):
+    if user_id:
+        user = UserModel().query.get(user_id)
+        if user:
+            abort(422, 'have user_id')
+
     user = UserModel()
+    user.id = user_id
     return user.save()
 
 

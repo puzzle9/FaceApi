@@ -24,6 +24,12 @@
 
 `POST /user/create`
 
+### Parameters
+
+name | type | description
+:--- | :--- | :--- 
+user_id | int | have create or new user
+
 ### Response
 
 ```json

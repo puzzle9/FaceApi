@@ -8,7 +8,7 @@ from app.response import success
 
 @blueprint.route('/create', methods=['POST'])
 def create():
-    info = UserCreate()
+    info = UserCreate(request.form.get('user_id'))
     return success({
         'user_id': info.id,
     })

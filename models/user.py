@@ -36,8 +36,8 @@ def UserCreate(user_id):
 
 def UserUpdate(user_id, info):
     user = UserGet(user_id)
-    print(type(info))
     if info is None:
+        UserDeleteFaces(user_id)
         data = None
     else:
         data = PickleDumps(info)

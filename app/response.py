@@ -2,7 +2,6 @@ from flask import jsonify
 
 
 def success(info='success'):
-    print(type(info))
     data = {
         'code': 200,
     }

@@ -23,7 +23,7 @@ def empty():
 
 @blueprint.route('/face/update', methods=['POST'])
 @check(file=False)
-def faceAdd():
+def faceUpdate():
     user_id = request.form.get('user_id')
     file = request.files.get('file')
 

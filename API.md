@@ -95,9 +95,11 @@ file | file | `face img`
 ```json
 {
   "code": 200,
-  "count": 31,
-  "current": 0.4656738424201913,
-  "mean": 0.49017777844415206
+  "count": 12,
+  "current": 0.8847041942898801,
+  "face_tolerance": 0.5,
+  "mean": 0.8280165007055604,
+  "status": false
 }
 ```
 

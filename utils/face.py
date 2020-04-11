@@ -1,6 +1,6 @@
 # https://face-recognition.readthedocs.io/
 
-from flask import abort
+from flask import current_app, abort
 import face_recognition as fr
 import numpy
 
@@ -15,9 +15,18 @@ def FaceEncodings(file):
 
 def FaceDistance(face_encodings, face_to_compare):
     distances = fr.face_distance(face_encodings, face_to_compare)
+    current = distances[0]
+    face_tolerance = current_app.config['FACE_TOLERANCE']
+
+    if current <= face_tolerance:
+        status = True
+    else:
+        status = False
 
     return {
-        'current': distances[0],
+        'current': current,
+        'face_tolerance': face_tolerance,
+        'status': status,
         'mean': numpy.mean(distances),
         'count': len(face_encodings),
     }
